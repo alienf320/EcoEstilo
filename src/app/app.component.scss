@@ -240,7 +240,8 @@
 
 	.row {
 		@include html-grid((50px, 50px));
-
+		justify-content: center;
+		
 		@include breakpoint('<=wide') {
 			@include html-grid((40px, 40px), 'wide');
 		}
@@ -265,6 +266,10 @@
 			@include html-grid((20px, 20px), 'mobilep');
 		}
 	}
+
+/* Header */
+
+
 
 /* Section/Article */
 
@@ -664,12 +669,6 @@
 				@include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15))', 'url("../assets/css/images/bg01.png")'));
 				color: #fff;
 			}
-
-			tfoot {
-			}
-
-			tbody {
-			}
 		}
 	}
 
@@ -771,12 +770,16 @@
 
 	#header {
 		text-align: center;
-		padding: 3em 0 0 0;
+		padding: 0.5em 0;
 		background-color: #fff;
-		background-image:			url('../assets/css/images/bg01.png'),		url('../assets/css/images/bg02.png'),		url('../assets/css/images/bg01.png');
-		background-position:		top left,					top left,					top left;
-		background-size:			100% 6em,					100% 6em,					auto;
-		background-repeat:			no-repeat,					no-repeat,					repeat;
+		background-image: url('../assets/images/Logo-backgournd.jpeg');
+		background-position: center;
+		background-size: cover;
+
+		img {
+			position: relative;
+			left: 0.5px;
+		}
 
 		h1 {
 			padding: 0 0 2.75em 0;
@@ -872,6 +875,16 @@
 		}
 	}
 
+/* Carousel */
+
+carousel {
+  height: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Dropotron */
 
 	.dropotron {
@@ -913,11 +926,26 @@
 
 /* Banner */
 
+.banner-description {
+	display: flex;
+	margin: 20px;
+
+	.description {
+		padding: 20px;
+
+		p {
+			
+		}
+	}
+}
+
 	#banner {
-		background-image: url('../assets/images/banner.jpg');
-		background-position: center center;
-		background-size: cover;
+		//background-image: url('../assets/images/banner.jpg');
+		//background-position: center center;
+		//background-size: cover;
 		height: 28em;
+		margin: 20px;
+		width: 50vw;
 		text-align: center;
 		position: relative;
 
@@ -1103,8 +1131,8 @@
 		/* Header */
 
 			#header {
-				padding: 2em 0 0 0;
-
+				padding: 0.5em 0;
+				margin-bottom: 20px;
 				h1 {
 					padding: 0 0 1.75em 0;
 				}

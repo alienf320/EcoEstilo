@@ -9,18 +9,16 @@
 		<title>Arcana by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
-
 			<!-- Header -->
 				<div id="header">
-
 					<!-- Logo -->
-						<h1><a href="index.html" id="logo">Arcana <em>by HTML5 UP</em></a></h1>
-
+						<img src="../assets/images/Logo 2.png" alt="" srcset="">
 					<!-- Nav -->
-						<nav id="nav">
+						<!-- <nav id="nav">
 							<ul>
 								<li class="current"><a href="index.html">Home</a></li>
 								<li>
@@ -47,17 +45,32 @@
 								<li><a href="two-sidebar.html">Two Sidebar</a></li>
 								<li><a href="no-sidebar.html">No Sidebar</a></li>
 							</ul>
-						</nav>
+						</nav> -->
 
 				</div>
 
 			<!-- Banner -->
+			<section class="banner-description">
 				<section id="banner">
-					<header>
+          <carousel>
+            <ng-container *ngFor="let item of items">
+              <ng-container *carouselItem>
+                <div class="item">
+                  <img [src]="item.url" alt="">
+                </div>
+              </ng-container>
+            </ng-container>
+          </carousel>
+					<!-- <header>
 						<h2>Arcana: <em>A responsive site template freebie by <a href="http://html5up.net">HTML5 UP</a></em></h2>
 						<a href="#" class="button">Learn More</a>
-					</header>
+					</header> -->
 				</section>
+				<div class="description">
+					<h2>Título</h2>
+					<p>Aquí podríamos poner la visión de la empresa o algún lema que los caracterice</p>
+				</div>
+			</section>
 
 			<!-- Highlights -->
 				<section class="wrapper style1">
@@ -66,22 +79,22 @@
 							<section class="col-4 col-12-narrower">
 								<div class="box highlight">
 									<i class="icon solid major fa-paper-plane"></i>
-									<h3>This Is Important</h3>
-									<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+									<h3>Title</h3>
+									<p>Breve explicación del servicio</p>
 								</div>
 							</section>
 							<section class="col-4 col-12-narrower">
 								<div class="box highlight">
 									<i class="icon solid major fa-pencil-alt"></i>
-									<h3>Also Important</h3>
-									<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+									<h3>Title</h3>
+									<p>Breve explicación del servicio</p>
 								</div>
 							</section>
 							<section class="col-4 col-12-narrower">
 								<div class="box highlight">
 									<i class="icon solid major fa-wrench"></i>
-									<h3>Probably Important</h3>
-									<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+									<h3>Title</h3>
+									<p>Breve explicación del servicio</p>
 								</div>
 							</section>
 						</div>
@@ -106,59 +119,58 @@
 								<div class="box post">
 									<a href="#" class="image left"><img src="images/pic01.jpg" alt="" /></a>
 									<div class="inner">
-										<h3>The First Thing</h3>
-										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+										<h3>Testimonios</h3>
+										<p>Aquí podríamos poner opiniones o testimonios de trabajos realizados. Quizás edificios o empresas para las que trabajaron</p>
+									</div>
+								</div>
+							</section>							
+							<section class="col-6 col-12-narrower">
+								<div class="box post">
+									<a href="#" class="image left"><img src="images/pic01.jpg" alt="" /></a>
+									<div class="inner">
+										<h3>Testimonios</h3>
+										<p>Aquí podríamos poner opiniones o testimonios de trabajos realizados. Quizás edificios o empresas para las que trabajaron</p>
 									</div>
 								</div>
 							</section>
 							<section class="col-6 col-12-narrower">
 								<div class="box post">
-									<a href="#" class="image left"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image left"><img src="images/pic01.jpg" alt="" /></a>
 									<div class="inner">
-										<h3>The Second Thing</h3>
-										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-									</div>
-								</div>
-							</section>
-						</div>
-						<div class="row">
-							<section class="col-6 col-12-narrower">
-								<div class="box post">
-									<a href="#" class="image left"><img src="images/pic03.jpg" alt="" /></a>
-									<div class="inner">
-										<h3>The Third Thing</h3>
-										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+										<h3>Testimonios</h3>
+										<p>Aquí podríamos poner opiniones o testimonios de trabajos realizados. Quizás edificios o empresas para las que trabajaron</p>
 									</div>
 								</div>
 							</section>
 							<section class="col-6 col-12-narrower">
 								<div class="box post">
-									<a href="#" class="image left"><img src="images/pic04.jpg" alt="" /></a>
+									<a href="#" class="image left"><img src="images/pic01.jpg" alt="" /></a>
 									<div class="inner">
-										<h3>The Fourth Thing</h3>
-										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
+										<h3>Testimonios</h3>
+										<p>Aquí podríamos poner opiniones o testimonios de trabajos realizados. Quizás edificios o empresas para las que trabajaron</p>
 									</div>
 								</div>
 							</section>
+							
 						</div>
 					</div>
 				</section>
 
 			<!-- CTA -->
-				<section id="cta" class="wrapper style3">
+				<!-- <section id="cta" class="wrapper style3">
 					<div class="container">
 						<header>
 							<h2>Are you ready to continue your quest?</h2>
 							<a href="#" class="button">Insert Coin</a>
 						</header>
 					</div>
-				</section>
+				</section> -->
 
 			<!-- Footer -->
 				<div id="footer">
 					<div class="container">
 						<div class="row">
-							<section class="col-3 col-6-narrower col-12-mobilep">
+							<!-- <section class="col-3 col-6-narrower col-12-mobilep">
 								<h3>Links to Stuff</h3>
 								<ul class="links">
 									<li><a href="#">Mattis et quis rutrum</a></li>
@@ -181,7 +193,7 @@
 									<li><a href="#">Sed et dapibus quis</a></li>
 									<li><a href="#">Rutrum amet varius</a></li>
 								</ul>
-							</section>
+							</section> -->
 							<section class="col-6 col-12-narrower">
 								<h3>Get In Touch</h3>
 								<form>
