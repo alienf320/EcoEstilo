@@ -241,7 +241,7 @@
 	.row {
 		@include html-grid((50px, 50px));
 		justify-content: center;
-		
+
 		@include breakpoint('<=wide') {
 			@include html-grid((40px, 40px), 'wide');
 		}
@@ -932,10 +932,6 @@ carousel {
 
 	.description {
 		padding: 20px;
-
-		p {
-			
-		}
 	}
 }
 
