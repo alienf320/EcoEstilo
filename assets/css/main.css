@@ -2116,7 +2116,7 @@ input, select, textarea {
 	}
 
 		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
+
 			-webkit-font-smoothing: antialiased;
 			display: inline-block;
 			font-style: normal;
@@ -2260,7 +2260,6 @@ input, select, textarea {
 		}
 
 		ul.actions.special {
-			-moz-justify-content: center;
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
@@ -3018,7 +3017,6 @@ input, select, textarea {
 				}
 
 				#footer form .actions {
-					-moz-justify-content: center;
 					-webkit-justify-content: center;
 					-ms-justify-content: center;
 					justify-content: center;
@@ -3097,7 +3095,7 @@ input, select, textarea {
 				}
 
 					#titleBar .toggle:before {
-						-moz-osx-font-smoothing: grayscale;
+
 						-webkit-font-smoothing: antialiased;
 						display: inline-block;
 						font-style: normal;
